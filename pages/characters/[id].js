@@ -40,7 +40,7 @@ const CharDetails = ({ char }) => {
                 <img src={ char.image } alt="" />
                 <h1>{ char.name }</h1>
                 <p>Race: { char.species }</p>
-                <p>Origin: { char.gender }</p>
+                <p>Origin: { char.origin.name }</p>
                 <p>Status: { char.status }</p>
             </div>
 
