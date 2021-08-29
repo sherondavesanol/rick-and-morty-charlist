@@ -17,10 +17,7 @@ export default function Home() {
 
           <h1 className={styles.title}>Home</h1>
           <p className={styles.text}>This is a Rick and Morty tribute webpage made using React.js & Next.js. Data is fetched and rendered from the Rick and Morty API.</p>
-          <p className={styles.text}>This is a Rick and Morty tribute webpage made using React.js & Next.js. Data is fetched and rendered from the Rick and Morty API.</p>
-          <p className={styles.text}>This is a Rick and Morty tribute webpage made using React.js & Next.js. Data is fetched and rendered from the Rick and Morty API.</p>
-          <p className={styles.text}>This is a Rick and Morty tribute webpage made using React.js & Next.js. Data is fetched and rendered from the Rick and Morty API.</p>
-          <p className={styles.text}>This is a Rick and Morty tribute webpage made using React.js & Next.js. Data is fetched and rendered from the Rick and Morty API.</p>
+          <p className={styles.text}>This website is not affiliated to the official organization behind Rick and Morty. All intellectual property belongs to the Adult Swim.</p>
 
           <Link href="/characters/">
             <a className={styles.btn}>See Character List</a>

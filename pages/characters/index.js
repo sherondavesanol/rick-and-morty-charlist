@@ -21,26 +21,29 @@ const Characters = ({ data }) => {
             </Head>
 
             <div>
-                <h1>Character List</h1>
+                <h1 className={styles.h1}>Character List</h1>
                 
-                { data.results.map(char => (
+                <div className={ styles.card }>
 
-                    <Link 
-                        href={/characters/ + char.id} 
-                        key={ char.id }
-                    >
-                        <a className = {styles.single}>
-                            <h3>{ char.name }</h3>
-                        </a>
-                    </Link>
+                    { data.results.map(char => (
 
-                    ))
-                }
+                        <Link 
+                            href={/characters/ + char.id} 
+                            key={ char.id }
+                        >
+                            <a 
+                            style={{backgroundImage: `linear-gradient(0deg, rgba(0, 0, 0, 0.75), transparent 50%), url(${char.image})`}} 
+                            className={styles.single}>
+                                <h3>{char.name}</h3>
+                            </a>
+                        </Link>
+                        ))
+                    }                 
 
+                </div>
             </div>
-            
         </>
     );
 }
- 
+
 export default Characters;

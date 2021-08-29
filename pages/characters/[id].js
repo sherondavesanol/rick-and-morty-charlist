@@ -1,4 +1,5 @@
 import Head from "next/head"
+import styles from '../../styles/CharacterId.module.css'
 
 export const getStaticPaths = async () => {
     const res = await fetch('https://rickandmortyapi.com/api/character');
@@ -36,8 +37,8 @@ const CharDetails = ({ char }) => {
                 <meta name="keywords" content="rick and morty" />
             </Head>
             
-            <div>
-                <img src={ char.image } alt="" />
+            <div className={styles.content}>
+                <img src={ char.image } alt="" className={styles.image}/>
                 <h1>{ char.name }</h1>
                 <p>Race: { char.species }</p>
                 <p>Origin: { char.origin.name }</p>
