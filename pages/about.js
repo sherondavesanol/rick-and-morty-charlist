@@ -13,7 +13,7 @@ const About = () => {
             </Head>
 
                 <h1 className={styles.title}>About</h1>
-                <p className={styles.text}>Rick and Morty, a science-fiction, dark comedy series about genius inventor, Rick Sanchez, and his naive grandson, Morty Smith. The American animated television show is created by Justin Roiland and Dan Harmon. It premiered on Cartoon Network's Adult Swim block on December 2, 2013.</p>
+                <p className={styles.text}>Rick and Morty, a science-fiction, dark comedy series about genius inventor, Rick Sanchez, and his naive grandson, Morty Smith. The American animated television show is created by Justin Roiland and Dan Harmon. It premiered on Cartoon Network&apos;s Adult Swim block on December 2, 2013.</p>
 
             </div>
         </>
